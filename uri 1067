@@ -1,0 +1,24 @@
+package uri1067;
+
+import java.util.Scanner;
+ 
+public class Uri1067 {
+
+   
+    public static void main(String[] args) {
+       
+      int x;
+        Scanner sc = new Scanner(System.in);
+
+        do {
+            x = sc.nextInt();
+        } while (x < 1 || x > 1000);
+
+        for (int i  = 1; i <= x; i++) {
+            if (i % 2 != 0) {
+            
+    System.out.println(i);
+            }
+        }
+    }
+}
