@@ -1,0 +1,30 @@
+#include <stdio.h>
+ 
+int main() {
+ 
+   double M[12][12], sum=0.0;
+    int i, j, k;
+    char x[2];
+
+    scanf("%d %s",&k,&x);
+    for(i=0; i<=11; i++)
+    {
+        for(j=0; j<=11; j++)
+        {
+            scanf("%lf",&M[i][j]);
+            if(i==k)
+            {
+                sum+=M[i][j];
+            }
+        }
+    }
+    if(x[0]=='S')
+    {
+        printf("%.1lf\n",sum);
+    }
+    else if(x[0]=='M')
+    {
+        printf("%.1lf\n",sum/12.0);
+    }
+    return 0;
+}
