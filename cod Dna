@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <string.h>
+int main (void)
+{
+	char dna[100];
+	int d, result=0;
+	fflush(stdin);
+	scanf("%s", dna);
+	
+	for(d=0;d<strlen(dna);d++){
+	 if(dna[d]== 'A'){
+	 	if(dna[d+1]== 'T'){
+	 		if(dna[d+2]== 'G'){
+			 	 
+	 result=1;
+	  }
+    }
+   }
+ }
+	if(result == 1){
+	
+    	printf("EXISTE");
+	
+	}else{
+	
+    	printf("INEXISTENTE");
+}
+	return 0;
+}
+   
